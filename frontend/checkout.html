@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASCO - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>FASCO</h1>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </nav>
+                <div class="sign-up"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Title -->
+    <div class="checkout-title">
+        <div class="container">
+            <h1>FASCO Checkout</h1>
+        </div>
+    </div>
+
+    <!-- Checkout Content -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-content">
+                <!-- Left Column - Forms -->
+                <div class="checkout-forms">
+                    <!-- Contact Section -->
+                    <div class="checkout-section">
+                        <h2>Contact</h2>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Số điện thoại" class="form-input" id="phone-input">
+                        </div>
+                    </div>
+
+                    <!-- Delivery Section -->
+                    <div class="checkout-section">
+                        <h2>Delivery</h2>
+                        <div class="form-group">
+                            <select class="form-select" id="city-select">
+                                <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                <option value="Hải Phòng">Hải Phòng</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                <option value="Cần Thơ">Cần Thơ</option>
+                                <option value="An Giang">An Giang</option>
+                                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                <option value="Bắc Giang">Bắc Giang</option>
+                                <option value="Bắc Kạn">Bắc Kạn</option>
+                                <option value="Bạc Liêu">Bạc Liêu</option>
+                                <option value="Bắc Ninh">Bắc Ninh</option>
+                                <option value="Bến Tre">Bến Tre</option>
+                                <option value="Bình Định">Bình Định</option>
+                                <option value="Bình Dương">Bình Dương</option>
+                                <option value="Bình Phước">Bình Phước</option>
+                                <option value="Bình Thuận">Bình Thuận</option>
+                                <option value="Cà Mau">Cà Mau</option>
+                                <option value="Cao Bằng">Cao Bằng</option>
+                                <option value="Đắk Lắk">Đắk Lắk</option>
+                                <option value="Đắk Nông">Đắk Nông</option>
+                                <option value="Điện Biên">Điện Biên</option>
+                                <option value="Đồng Nai">Đồng Nai</option>
+                                <option value="Đồng Tháp">Đồng Tháp</option>
+                                <option value="Gia Lai">Gia Lai</option>
+                                <option value="Hà Giang">Hà Giang</option>
+                                <option value="Hà Nam">Hà Nam</option>
+                                <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                <option value="Hải Dương">Hải Dương</option>
+                                <option value="Hậu Giang">Hậu Giang</option>
+                                <option value="Hòa Bình">Hòa Bình</option>
+                                <option value="Hưng Yên">Hưng Yên</option>
+                                <option value="Khánh Hòa">Khánh Hòa</option>
+                                <option value="Kiên Giang">Kiên Giang</option>
+                                <option value="Kon Tum">Kon Tum</option>
+                                <option value="Lai Châu">Lai Châu</option>
+                                <option value="Lâm Đồng">Lâm Đồng</option>
+                                <option value="Lạng Sơn">Lạng Sơn</option>
+                                <option value="Lào Cai">Lào Cai</option>
+                                <option value="Long An">Long An</option>
+                                <option value="Nam Định">Nam Định</option>
+                                <option value="Nghệ An">Nghệ An</option>
+                                <option value="Ninh Bình">Ninh Bình</option>
+                                <option value="Ninh Thuận">Ninh Thuận</option>
+                                <option value="Phú Thọ">Phú Thọ</option>
+                                <option value="Phú Yên">Phú Yên</option>
+                                <option value="Quảng Bình">Quảng Bình</option>
+                                <option value="Quảng Nam">Quảng Nam</option>
+                                <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                <option value="Quảng Ninh">Quảng Ninh</option>
+                                <option value="Quảng Trị">Quảng Trị</option>
+                                <option value="Sóc Trăng">Sóc Trăng</option>
+                                <option value="Sơn La">Sơn La</option>
+                                <option value="Tây Ninh">Tây Ninh</option>
+                                <option value="Thái Bình">Thái Bình</option>
+                                <option value="Thái Nguyên">Thái Nguyên</option>
+                                <option value="Thanh Hóa">Thanh Hóa</option>
+                                <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                <option value="Tiền Giang">Tiền Giang</option>
+                                <option value="Trà Vinh">Trà Vinh</option>
+                                <option value="Tuyên Quang">Tuyên Quang</option>
+                                <option value="Vĩnh Long">Vĩnh Long</option>
+                                <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                <option value="Yên Bái">Yên Bái</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên" class="form-input" id="name-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Địa chỉ" class="form-input">
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="save-address">
+                            <label for="save-address">Lưu thông tin cho lần sau</label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="checkout-section">
+                        <h2>Payment</h2>
+                        <div class="form-group">
+                            <label><input type="radio" name="payment-method" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+                        </div>
+                        <button class="btn btn-dark btn-full">Đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-content">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="images/placeholder-dress.jpg" alt="Mini Dress With Ruffled Straps">
+                                <span class="product-count">1</span>
+                            </div>
+                            <div class="product-details">
+                                <h3>Mini Dress With Ruffled Straps</h3>
+                                <p>Red</p>
+                            </div>
+                            <div class="product-price">$100.00</div>
+                        </div>
+                        
+                        <div class="price-summary">
+                            <div class="price-row">
+                                <span>Subtotal</span>
+                                <span>$100.00</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Shipping</span>
+                                <span>$40.00</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Total</span>
+                                <span>$140.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="logo">
+                    <h2>FASCO</h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3>Support Center</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FASCO. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/beaver000"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/shibaa_000/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+    <script src="auth-check.js"></script>
+    <script src="signinredirect.js"></script>
+    <script src="header-auth.js"></script>
+</body>
+</html>
